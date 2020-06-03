@@ -502,6 +502,7 @@ padding: 40px 35px 51px;
   min-height: 530px;
   .product__item {
     box-shadow: 0px 2px 4px 0px rgba( 108, 111, 115, 0.2 );
+    border-radius: 4px;
     flex-direction: column;
     max-width: 360px;
     &-img {
@@ -599,39 +600,35 @@ padding: 40px 35px 51px;
         padding-top: 16px;
       }
     }
+    a.lnr {
+      font-size: 48px;
+      margin-bottom: 47px;
+    }
   }
-}
-
-a.lnr {
-  font-size: 48px;
-  margin-bottom: 47px;
 }
 
 .item-briefcase {
   a {
-    color: #feb71d;
+    color: $i-orange;
   }
-
 }
-
 .item-download {
   a {
-    color: #58c9e9;
+    color: $i-bue;
   }
   .icon-numbers {
     margin-top: 5px;
   }
-  
 }
 .item-smile {
   a{
-    color: #77de51;
+    color: $i-green;
   }
   
 }
 .item-users {
   a {
-    color: #ff6a6d;
+    color: $i-red;
   }
   .icon-numbers {
     margin-top: 5px;
@@ -641,4 +638,180 @@ a.lnr {
 .lnr-cloud-download,
 .lnr-users {
   margin-top: -5px;
+}
+.advantages {
+  background-color: #fff;
+  padding-bottom: 117px;
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+.title-text {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  margin-bottom: 28px;
+  span {
+    color: $blue;
+  }
+}
+.title-bottom {
+  color: $text;
+  text-align: center;
+  max-width: 675px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+}
+.advantages__item {
+  max-width: 362px;
+  padding: 18px 19px 30px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 50px 0px rgba( 0, 0, 0, 0.1 );
+  text-align: center;
+  margin: 15px 0px;
+  &-number {
+    @include f300;
+    font-size: 48px;
+    line-height: 52px;
+    color: #5c87f8;
+    opacity: 20%;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  &-icon {
+    margin-bottom: 50px;
+    font-size: 60px;
+    margin-top: -5px;
+  }
+  &-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  &-text {
+    max-width: 292px;
+    color: $text;
+    margin: 0 auto;
+    margin-bottom: 29px;
+    span {
+      display: block;
+      max-width: 250px;
+      margin: 0 auto;
+    }
+  }
+}
+.lnr-license {
+  color: $blue;
+}
+.lnr-magic-wand {
+  color: #7f4ec2;
+}
+.lnr-lock {
+  color: $i-green;
+}
+.lnr-chart-bars {
+  color: $i-orange;
+}
+.lnr-leaf {
+  color: $i-bue;
+}
+.lnr-phone {
+  color: $i-red;
+}
+.user-start {
+  margin-bottom: 117px;
+  &__inner {
+    display: flex;
+  }
+  &__item {
+    width: 960px;
+    height: 560px;
+    padding: 95px 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+  }
+  &__icon {
+    display: block;
+    margin: 0 auto;
+    max-width: 120px;
+    min-height: 100px;
+    
+  }
+  &__icon-2 {
+    max-width: 102px;
+    min-height: 102px;
+  }
+  
+  &__title {
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 47px;
+    margin-bottom: 30px;
+  }
+  &__text {
+    margin: 0 auto;
+    margin-bottom: 48px;
+    max-width: 583px;
+  }
+  &__btn {
+    background-color: #fff;
+    color: $blue;
+    padding: 17px 28px;
+    border-radius: 36px;
+    box-shadow: 0px 4px 30px 0px rgba( 0, 0, 0,0.3 );
+  }
+  &__btn-2 {
+    color: $violet;
+  }
+}
+.latest-news {
+  background-color: $grey;
+  padding: 120px 0px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    .news__item.product-card {
+      min-height: 100%;
+    }
+    .product__title {
+      font-size: 22px;
+    }
+    .product__describtion {
+      color: $text;
+    }
+    .product__info {
+      padding: 0px 30px;
+      padding-top: 9px;
+      a.lnr-bubble,
+      a.lnr-eye {
+        color: #7e7e7e;
+        font-size: 15px;
+        padding-top: 13px;
+        text-align: center;
+        &::before {
+          margin-right: 8px;
+        }
+      }
+      a.lnr-bubble {
+        margin-left: 33px;
+        margin-right: auto;
+      }
+    }
+    .news__data.lnr-clock {
+      color: $blue;
+      font-size: 15px;
+      border-right: 1px solid #ececec;
+      padding: 13px 47px 0px 0px;
+      span {
+        margin-left: 8px;
+        color: #999999;
+      }
+    }
+    
+    
+  }
 }

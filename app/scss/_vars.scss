@@ -4,7 +4,15 @@ $green: #62d03b;
 $violet:#7347c1;
 $grey:#eff1f5;
 $text:#555555;
+$i-green:#77de51;
+$i-orange: #feb71d;
+$i-red: #ff6a6d;
+$i-bue: #58c9e9;
 
+@mixin f300 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+}
 @mixin f500 {
   font-family: 'Quicksand', sans-serif;
   font-weight: 500;
