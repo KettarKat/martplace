@@ -18,6 +18,7 @@ $(function(){
     normalFill: "#fff",
     spacing: "3px",
   });
-   
+
+  var mixer = mixitup('.release__products-inner');
   
-})
+});
