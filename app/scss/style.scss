@@ -1445,10 +1445,21 @@ a.footer__bottom-link {
   box-shadow: none;
 }
 //end login page
-//start register page
+//start register and recover page
 .register-btn {
   padding: 17px 47px;
   box-shadow: none;
 }
-//end register page
+.recover__text {
+  @include f400;
+  color: $text;
+  padding: 4px 50px 30px;
+  border-bottom: 1px solid #e8ebf0;
+}
+.recover-btn {
+  padding: 17px 55px;
+  box-shadow: none;
+  margin-bottom: 4px !important;
+}
+//end register and recover page
 
