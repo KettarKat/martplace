@@ -26,7 +26,6 @@
   line-height: 20px;
   color: #fff;
   display: block;
-
 }
 .customer {
   display: flex;
@@ -232,9 +231,9 @@
   }
 }
 .features__box {
-max-width: 363px;
-text-align: center;
-padding: 40px 35px 51px;
+  max-width: 363px;
+  text-align: center;
+  padding: 40px 35px 51px;
 }
 .features__box:hover {
   box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.07);
@@ -276,7 +275,6 @@ padding: 40px 35px 51px;
     box-shadow: 0px 2px 4px 0px rgba( 108, 111, 115,0.1 );
   }
 }
-
 .product__slider-inner {
   overflow: hidden;
   
@@ -340,7 +338,6 @@ padding: 40px 35px 51px;
 .button-1 {
   margin-right: 10px;
 }
-
 .product__title {
   @include f500;
   font-size: 24px;
@@ -540,7 +537,6 @@ padding: 40px 35px 51px;
     }
   }
 }
-
 .products__filter-btn {
   position: absolute;
   top: 46px;
@@ -593,8 +589,6 @@ padding: 40px 35px 51px;
 .release__products-btn {
   margin-top: 30px;
 }
-
-
 //end release__products section
 //start followers-slider section
 .followers__slider-items {
@@ -717,7 +711,6 @@ padding: 40px 35px 51px;
     }
   }
 }
-
 .item-briefcase {
   a {
     color: $i-orange;
@@ -1089,7 +1082,6 @@ a.join__marketplace-link-2 {
       padding-bottom: 35px;
     }
   }
-
 }
 .footer__top {
   background-color: #262b30;
@@ -1245,7 +1237,7 @@ a.footer__bottom-link {
   &__title {
     font-size: 30px;
     margin-bottom: 38px;
-    @include f300;
+    @include f400;
   }
   &__link {
     box-shadow: none;
@@ -1286,16 +1278,167 @@ a.footer__bottom-link {
     padding-left: 30px;
     padding-bottom: 30px;
     border-bottom: 1px solid #e8ebf0;
-    @include f300;
+    @include f400;
     font-size: 24px;
   }
   &__text {
-    @include f300;
+    @include f400;
     font-size: 16px;
     color: $text;
     padding:30px 40px 5px 30px;
   }
 }
-
-
 //end terms page
+//start join page
+.create, 
+.start {
+  background-color: #fff;
+}
+.join-page__inner {
+  padding: 95px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.join-page__img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 458px;
+  height: 352px;
+}
+.join-page__item {
+  flex-direction: column;
+  max-width: 480px;
+}
+.join-page__title {
+  padding: 35px 10px;
+  @include f400; 
+  font-size: 30px;
+}
+.join-page__text {
+  @include f400;
+  color: $text;
+  margin-bottom: 30px;
+  padding: 0px 10px;
+}
+.white-btn {
+  background-color: #fff;
+  color: $blue;
+  @include f400;
+  box-shadow: 0px 4px 30px 0px rgba( 0, 0, 0, 0.1);
+  padding: 15px 37px;
+  border-radius: 30px;
+  &:hover {
+    background-color: $blue;
+    color: #fff;
+    transition: all 0.4s;
+  }
+}
+.upload {
+  background-color: $grey;
+}
+.join-page__breadcrumbs {
+  text-align: center;
+  .breadcrumbs__inner {
+    padding-bottom: 30px;
+  }
+  .page__name {
+    @include f500; 
+    font-size: 30px;
+    line-height: 40px;
+    padding: 22px 0px 69px;
+    span {
+      display: block;
+      @include f300;
+      margin-top: 5px;
+    }
+  }
+}
+//end join page
+//start login page
+.login {
+  background-color: $grey;
+  padding: 70px 0px 117px;
+  &__inner {
+    background-color: #fff;
+    padding: 56px 0px;
+    max-width: 555px;
+    box-shadow: 0px 2px 4px 0px rgba( 108, 111, 115,0.2 );
+    margin: 0 auto;
+  }  
+  &__title {
+    border-bottom: 1px solid #e8ebf0;
+    text-align: center;
+    font-size: 26px;
+    padding-bottom: 30px;
+    @include f400;
+    span {
+      font-size: 16px;
+      display: block;
+      margin-top: 25px;
+      color: $text;
+    }
+  }
+  &__item {
+    padding: 29px 50px 0px;
+    form {
+      max-width: 455px;
+      label {
+        @include f500;
+        display: block;
+        margin-bottom: 15px;
+      }
+      input {
+        width: 100%;
+        border: none;
+        padding: 15px 20px;
+        background-color: $grey;
+        margin-bottom: 15px;
+        @include f400;
+        color: #898f96;
+        &::placeholder {
+          @include f400;
+          color: #898f96;
+        }
+      }
+      button {
+        margin: 28px 0px 35px;
+        border: none;
+      }
+    }
+    .jq-checkbox {
+      border-radius: 11px;
+    }
+    .jq-checkbox, .jq-radio {
+      width: 20px;
+      height: 20px;
+      margin: 0 10px 0 0;
+      border: none;
+      background: $blue;
+      box-shadow: none;
+    }
+    .jq-checkbox.checked .jq-checkbox__div {
+      width: 9px;
+      height: 6px;
+      margin: 6px 0 0 5.5px;
+      border-bottom: 3px solid #fff;
+      border-left: 3px solid #fff;
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 50px;
+    .bottom__link {
+      color: #898f96;
+      a {
+        color: $blue;
+      }
+    }
+  }
+}
+
+
+
+//end login page
+

@@ -19,7 +19,7 @@ $(function(){
     rating: 3.2,
     readOnly: true,
   });
-
+  $('input, select').styler();
   var mixer = mixitup('.release__products-inner');
   
 });
