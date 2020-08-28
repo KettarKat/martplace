@@ -1269,5 +1269,33 @@ a.footer__bottom-link {
   font-size: 30px;
   @include f500;
 }
-
 //end 404-page
+//start terms page
+.terms {
+  padding: 60px 0px 120px;
+  background-color: $grey;
+  &__inner {
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba( 108, 111, 115, 0.2);
+    padding: 30px 0px;
+  }
+  &__item {
+    margin-bottom: 60px;
+  }
+  &__title {
+    padding-left: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e8ebf0;
+    @include f300;
+    font-size: 24px;
+  }
+  &__text {
+    @include f300;
+    font-size: 16px;
+    color: $text;
+    padding:30px 40px 5px 30px;
+  }
+}
+
+
+//end terms page
