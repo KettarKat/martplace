@@ -12,11 +12,12 @@ $(function(){
   });
   
   $(".rate-star").rateYo({
-    rating: 5,
     starWidth: "15px",
     ratedFill: "#ffc000",
     normalFill: "#fff",
     spacing: "3px",
+    rating: 3.2,
+    readOnly: true,
   });
 
   var mixer = mixitup('.release__products-inner');

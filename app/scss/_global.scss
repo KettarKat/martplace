@@ -34,6 +34,17 @@ body {
   font-weight: 400;
   line-height: 20px;
 }
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
 header {
   color: #333333;
 }
@@ -45,4 +56,35 @@ header {
 .container-fluid {
   max-width: 100%;
   padding: 0px 15px;
+}
+.breadcrumbs__inner {
+  padding: 55px 0px;
+  overflow: hidden;
+  width: 1200px;
+  color: #fff;
+}
+.breadcrumbs__list {
+  padding-bottom: 15px;
+  li {
+    display: inline-block;
+    position: relative;
+    font-size: 15px;
+    & + li {
+      padding-left: 24px;
+      &::before {
+        content: '/';
+        position: absolute;
+        color: #fff;
+        left: 8px;
+      }
+    }
+    &:last-child {
+      a, span {
+        color: #bfcad7;
+      }
+    }
+  }
+  a {
+    color: #fff;
+  }
 }
