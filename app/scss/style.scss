@@ -1462,4 +1462,145 @@ a.footer__bottom-link {
   margin-bottom: 4px !important;
 }
 //end register and recover page
+//start pricing-plan page
+.pricing-plan {
+  background-color: $grey;
+  padding: 115px 0px; 
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.pricing-plan__title,
+.pricing-plan__text {
+  text-align: center;
+}
+.pricing-plan__title {
+  font-size: 36px;
+  @include f400;
+  margin-bottom: 30px;
+  span {
+    color: $blue;
+  }
+}
+.pricing-plan__text {
+  max-width: 690px;
+  color: $text;
+  margin: 0 auto;
+  margin-bottom: 55px;
+}
+.pricing__item {
+  background-color: #fff;
+  padding: 30px;
+  border-top: 3px solid $red;
+  max-width: 362px;
+  box-shadow: 0px 2px 4px 0px rgba( 108, 111, 115, 0.2 );
+  &-title {
+    font-size: 24px;
+    @include f500;
+    padding-bottom: 28px;
+    border-bottom: 1px solid $grey;
+    text-align: center;
+  }
+}
+.pricing__price {
+  margin-top: 25px;
+  margin-bottom: 45px;
+  text-align: center;
+  @include f400;
+  font-size: 36px; 
+  padding-left: 15px;
+  .price-value {
+    position: relative;
+    &:before {
+    content: '$';
+    position: absolute;
+    font-size: 18px;
+    bottom: 16px;
+    left: -10px;
+    }
+  }
+  .price-period {
+    color: $text;
+    @include f400;
+    font-size: 16px;
+    margin-left: -9px;
+  }
+}
+.pricing__features {
+  @include f500; 
+  margin-bottom: 38px;
+  li {
+    padding-left: 23px;
+    position: relative;
+      margin-bottom: 20px;
+    &:before {
+      content: '';
+      background-color: #c5cad4;
+      width: 7px;
+      height: 7px;
+      border-radius: 3px;
+      position: absolute;
+      left: 0;
+      bottom: 33%;
+    }
+    span {
+      color: $text;
+      @include f400;
+    }
+    a {
+      width: 18px;
+      height: 18px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-left: 12px;
+      margin-bottom: -5px;
+    }
+  }
+}
+[data-tooltip] {
+  position: relative; 
+}
+[data-tooltip]::after {
+  content: attr(data-tooltip); 
+  position: absolute;
+  width: 210px;
+  left: 5px;
+  font-size: 15px;
+  color: $text;
+  top: 27px;
+  background: $grey;
+  padding: 15px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  pointer-events: none; /*hint*/
+  opacity: 0; /*hint invisible*/
+  transition: 1s; 
+  z-index: 2;
+}
+[data-tooltip]:hover::after {
+  opacity: 1; /*hint visible*/
+  top: 27px;
+}
+a.pricing__link {
+  background-color: $red;
+  padding: 18px 80px;
+  border-radius: 4px;    
+  @include f500;
+  font-size: 18px;
+  color: #fff;
+}
+.pricing__item-business {
+  border-top: 3px solid $blue;
+  a.pricing__link {
+    background-color: $blue;
+  }
+}
+.pricing__item-agency {
+  border-top: 3px solid $i-orange;
+  a.pricing__link {
+    background-color: $i-orange;
+  }
+}
+//end pricing-plan page
 
