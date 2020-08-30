@@ -1603,4 +1603,75 @@ a.pricing__link {
   }
 }
 //end pricing-plan page
+//start contact page
+.breadcrumbs__inner-contact {
+  text-align: center;
+  .page__text {
+    font-size: 20px;
+  }
+}
+.contact-page {
+  background-color: $grey;
+  padding: 115px 0px;
+  @include f400;
+  &__title {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 28px;
+    span {
+      color: $blue;
+    }
+  }
+  &__text {
+    max-width: 690px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: $text;
+    margin-bottom: 55px;
+  }
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.contact-page__item {
+  padding: 50px 50px;
+  max-width: 360px;
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0px 2px 4px 0px rgba( 108, 111, 115, 0.2 );
+  border-radius: 4px;
+  &-text {
+    color: $text;
+    max-width: 260px;
+    width: 100%;
+    line-height: 30px;
+  }
+}
+a.contact-page__item-title {
+  display: block;
+  @include f500; 
+  font-size: 20px;
+  color: #000;
+  margin-top: 32px;
+  margin-bottom: 38px;
+}
+.contact-page__icon {
+  position: relative;   
+  padding-bottom: 47px; 
+  text-align: center;
+  margin: 0 auto;
+  &::before {
+    font-family: 'Linearicons-Free';
+    font-size: 48px;
+    color: $blue;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 0;
+  }
+}
+//end contact page
+
 
