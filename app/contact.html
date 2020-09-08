@@ -98,7 +98,8 @@
       <section class="contact-page">
         <div class="container">
           <h2 class="contact-page__title">How can We <span>Help?</span></h2>
-          <p class="contact-page__text">Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores nemis omnis fugats. Lid est laborum dolo rumes fugats untras.</p>
+          <p class="contact-page__text">Laborum dolo rumes fugats untras. Etharums ser quidem rerum facilis dolores
+            nemis omnis fugats. Lid est laborum dolo rumes fugats untras.</p>
           <div class="contact-page__inner">
             <div class="contact-page__items">
               <div class="contact-page__item">
@@ -123,12 +124,16 @@
             <div class="contact-page__form">
               <h3 class="contact-form__title">Leave Your Messages</h3>
               <form>
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Subject">
-                <input type="text" placeholder="Email">
-                <input type="text" placeholder="Phone">
-                <textarea placeholder="Your text here..."></textarea>
-                <button type="submit">Send Request</button>
+                <div class="contact-form__row">
+                  <input type="text" placeholder="Name">
+                  <input type="text" placeholder="Subject">
+                </div>
+                <div class="contact-form__row"> 
+                  <input type="text" placeholder="Email">
+                  <input type="text" placeholder="Phone">
+                </div>
+                <textarea placeholder="Your text here..." required></textarea>
+                <button type="submit" class="contact-form__btn blue-btn">Send Request</button>
               </form>
             </div>
           </div>
