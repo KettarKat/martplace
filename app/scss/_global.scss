@@ -22,6 +22,10 @@ p {
   font-size: inherit;
   font-weight: inherit;
 }
+button,
+a {
+  outline: none !important;
+}
 ul,
 li {
   margin: 0;
@@ -29,7 +33,6 @@ li {
   list-style: none;
 }
 body {
-  font-family: 'Quicksand-Regular', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
