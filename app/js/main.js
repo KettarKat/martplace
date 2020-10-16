@@ -19,6 +19,7 @@ $(function(){
     rating: 3.2,
     readOnly: true,
   });
+
   $('.icon-btn-list').on('click', function () {
     $('.favorites__item').addClass('list');
     $('.icon-btn-list').addClass('active');
@@ -29,6 +30,16 @@ $(function(){
     $('.icon-btn-large').addClass('active');
     $('.icon-btn-list').removeClass('active');
   });
+  
+  $(".new-products__aside-slider").ionRangeSlider({
+    type: "double",
+    min: 0,
+    max: 500,
+    from: 30,
+    to: 300,
+    prefix: "$"
+  });
+    
   $('input, select').styler();
   var mixer = mixitup('.release__products-inner');
   
