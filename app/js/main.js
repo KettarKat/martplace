@@ -30,7 +30,14 @@ $(function(){
     $('.icon-btn-large').addClass('active');
     $('.icon-btn-list').removeClass('active');
   });
-  
+  $('.popular-products-btn').on('click', function() {    
+    $('.popular-products-btn').addClass('.active-btn');
+    $('.new-products-btn').removeClass('.active-btn');
+  });
+  $('.new-products-btn').on('click', function() {    
+    $('.new-products-btn').addClass('.active-btn');
+    $('.popular-products-btn').removeClass('.active-btn');
+  });
   $(".new-products__aside-slider").ionRangeSlider({
     type: "double",
     min: 0,

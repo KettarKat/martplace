@@ -115,10 +115,10 @@
         <div class="container">
           <div class="favorites__btn-inner">
             <div class="new-product__btn">
-              <button class="active" type="button" data-filter=".new-products">
+              <button class="new-products-btn active-btn" type="button" data-filter=".new-products">
                 New Products
               </button>
-              <button type="button" data-filter=".popular-products">
+              <button class="popular-products-btn" type="button" data-filter=".popular-products">
                 Popular Products
               </button>
             </div>
@@ -185,25 +185,32 @@
                 <div class="aside__title">Filter Products</div>
                 <ul class="aside__list">
                   <li class="circle-icon">
-                    <button class="aside__btn aside__btn-bottom" type="button" data-filter=".trending-products">Trending Products</button>
+                    <button class="aside__btn aside__btn-bottom" type="button" data-filter=".trending-products">Trending
+                      Products</button>
                   </li>
                   <li class="circle-icon">
-                    <button class="aside__btn aside__btn-bottom" type="button" data-filter=".popular-products">Popular Products</button>
+                    <button class="aside__btn aside__btn-bottom" type="button" data-filter=".popular-products">Popular
+                      Products</button>
                   </li>
                   <li class="circle-icon">
-                    <button class="aside__btn aside__btn-bottom" type="button" data-filter=".new-products">New Products</button>
+                    <button class="aside__btn aside__btn-bottom" type="button" data-filter=".new-products">New
+                      Products</button>
                   </li>
                   <li class="circle-icon">
-                    <button class="aside__btn aside__btn-bottom" type="button" data-filter=".best-seller">Best Seller</button>
+                    <button class="aside__btn aside__btn-bottom" type="button" data-filter=".best-seller">Best
+                      Seller</button>
                   </li>
                   <li class="circle-icon">
-                    <button class="aside__btn aside__btn-bottom" type="button" data-filter=".best-rating">Best Rating</button>
+                    <button class="aside__btn aside__btn-bottom" type="button" data-filter=".best-rating">Best
+                      Rating</button>
                   </li>
                   <li class="circle-icon">
-                    <button class="aside__btn aside__btn-bottom" type="button" data-filter=".low-price">Low Price</button>
+                    <button class="aside__btn aside__btn-bottom" type="button" data-filter=".low-price">Low
+                      Price</button>
                   </li>
                   <li class="circle-icon">
-                    <button class="aside__btn aside__btn-bottom" type="button" data-filter=".high-price">High Price</button>
+                    <button class="aside__btn aside__btn-bottom" type="button" data-filter=".high-price">High
+                      Price</button>
                   </li>
                 </ul>
               </div>
@@ -217,7 +224,7 @@
               <div class="favorites__inner">
                 <div class="container">
                   <div class="release__products-inner favorites__products-inner">
-                    <div class="favorites__item product-card mix category-popular-items" data-order="1">
+                    <div class="favorites__item product-card mix new-products " data-order="1">
                       <div class="product__item">
                         <div class="product__item-img-wrapper">
                           <div class="product__item-img">
@@ -226,22 +233,39 @@
                         </div>
                         <div class="product__item-text-wrapper">
                           <div class="product__item-text">
-                            <div class="product__title">
-                              Finance and Consulting 
-                              <span>Business Theme</span>
-                            </div>
-                            <div class="product__author">
-                              <a class="author-link" href="#">
-                                <div class="avatar" style="background-image: url(images/content/product-author.png);"></div>
-                                <span>Theme-Valley</span>
-                              </a>
-                              
-                            </div>
-                            <div class="product__info">
-                              <div class="product__item-star">
-                                <div class="rate-star"></div>
+                            <div class="product-list__box product-list__box-text">
+                              <div class="product__title">
+                                Finance and Consulting
+                                <span>Business Theme</span>
                               </div>
-                              <a class="lnr lnr-cart" href="#"><span>427</span></a>
+                              <p class="product__describtion">
+                                Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                              </p>
+                              <a class="product-cathegory product-cathegory__list" href="#">Wordpress</a>
+                            </div>
+                            <div class="product-list__box">
+                              <div class="product__author">
+                                <a class="author-link" href="#">
+                                  <div class="avatar" style="background-image: url(images/content/product-author.png);">
+                                  </div>
+                                  <span>Theme-Valley</span>
+                                </a>
+                              </div>
+                              <div class="product-list__box-comments">
+                                <a href="#" class="lnr lnr-heart">90 loves</a>
+                                <a href="#" class="lnr lnr-bubble">90 Comments</a>
+                              </div>
+                              <div class="product__info">
+                                <div class="product__item-star">
+                                  <div class="rate-star"></div>
+                                  <span class="star__list">(34)</span>
+                                </div>
+                                <a class="lnr lnr-cart" href="#"><span>427</span></a>
+                              </div>
+                            </div>
+                            <div class="product-list__box-bottom">
+                              <a href="#" class="price-cathegory">$10 - $50</a>
+                              <a class="lnr lnr-cart lnr-cart-list" href="#"><span>892</span></a>
                             </div>
                             <div class="product__info-bottom">
                               <a href="#" class="price-cathegory">$18</a>
@@ -251,7 +275,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="favorites__item product-card mix category-new-items" data-order="2">
+                    <div class="favorites__item product-card mix new-products" data-order="2">
                       <div class="product__item">
                         <div class="product__item-img-wrapper">
                           <div class="product__item-img">
@@ -260,22 +284,39 @@
                         </div>
                         <div class="product__item-text-wrapper">
                           <div class="product__item-text">
-                            <div class="product__title">
-                              Finance and Consulting 
-                              <span>Business Theme</span>
-                            </div>
-                            <div class="product__author">
-                              <a class="author-link" href="#">
-                                <div class="avatar" style="background-image: url(images/content/product-author.png);"></div>
-                                <span>Theme-Valley</span>
-                              </a>
-                              
-                            </div>
-                            <div class="product__info">
-                              <div class="product__item-star">
-                                <div class="rate-star"></div>
+                            <div class="product-list__box product-list__box-text">
+                              <div class="product__title">
+                                Finance and Consulting
+                                <span>Business Theme</span>
                               </div>
-                              <a class="lnr lnr-cart" href="#"><span>427</span></a>
+                              <p class="product__describtion">
+                                Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                              </p>
+                              <a class="product-cathegory product-cathegory__list" href="#">Wordpress</a>
+                            </div>
+                            <div class="product-list__box">
+                              <div class="product__author">
+                                <a class="author-link" href="#">
+                                  <div class="avatar" style="background-image: url(images/content/product-author.png);">
+                                  </div>
+                                  <span>Theme-Valley</span>
+                                </a>
+                              </div>
+                              <div class="product-list__box-comments">
+                                <a href="#" class="lnr lnr-heart">90 loves</a>
+                                <a href="#" class="lnr lnr-bubble">90 Comments</a>
+                              </div>
+                              <div class="product__info">
+                                <div class="product__item-star">
+                                  <div class="rate-star"></div>
+                                  <span class="star__list">(34)</span>
+                                </div>
+                                <a class="lnr lnr-cart" href="#"><span>427</span></a>
+                              </div>
+                            </div>
+                            <div class="product-list__box-bottom">
+                              <a href="#" class="price-cathegory">$10 - $50</a>
+                              <a class="lnr lnr-cart lnr-cart-list" href="#"><span>892</span></a>
                             </div>
                             <div class="product__info-bottom">
                               <a href="#" class="price-cathegory">$18</a>
@@ -285,7 +326,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="favorites__item product-card mix category-best-seller" data-order="3">
+                    <div class="favorites__item product-card mix new-products " data-order="3">
                       <div class="product__item">
                         <div class="product__item-img-wrapper">
                           <div class="product__item-img">
@@ -294,22 +335,39 @@
                         </div>
                         <div class="product__item-text-wrapper">
                           <div class="product__item-text">
-                            <div class="product__title">
-                              Finance and Consulting 
-                              <span>Business Theme</span>
-                            </div>
-                            <div class="product__author">
-                              <a class="author-link" href="#">
-                                <div class="avatar" style="background-image: url(images/content/product-author.png);"></div>
-                                <span>Theme-Valley</span>
-                              </a>
-                              
-                            </div>
-                            <div class="product__info">
-                              <div class="product__item-star">
-                                <div class="rate-star"></div>
+                            <div class="product-list__box product-list__box-text">
+                              <div class="product__title">
+                                Finance and Consulting
+                                <span>Business Theme</span>
                               </div>
-                              <a class="lnr lnr-cart" href="#"><span>427</span></a>
+                              <p class="product__describtion">
+                                Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                              </p>
+                              <a class="product-cathegory product-cathegory__list" href="#">Wordpress</a>
+                            </div>
+                            <div class="product-list__box">
+                              <div class="product__author">
+                                <a class="author-link" href="#">
+                                  <div class="avatar" style="background-image: url(images/content/product-author.png);">
+                                  </div>
+                                  <span>Theme-Valley</span>
+                                </a>
+                              </div>
+                              <div class="product-list__box-comments">
+                                <a href="#" class="lnr lnr-heart">90 loves</a>
+                                <a href="#" class="lnr lnr-bubble">90 Comments</a>
+                              </div>
+                              <div class="product__info">
+                                <div class="product__item-star">
+                                  <div class="rate-star"></div>
+                                  <span class="star__list">(34)</span>
+                                </div>
+                                <a class="lnr lnr-cart" href="#"><span>427</span></a>
+                              </div>
+                            </div>
+                            <div class="product-list__box-bottom">
+                              <a href="#" class="price-cathegory">$10 - $50</a>
+                              <a class="lnr lnr-cart lnr-cart-list" href="#"><span>892</span></a>
                             </div>
                             <div class="product__info-bottom">
                               <a href="#" class="price-cathegory">$18</a>
@@ -319,7 +377,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="favorites__item product-card mix category-best-rating" data-order="4">
+                    <div class="favorites__item product-card mix new-products" data-order="4">
                       <div class="product__item">
                         <div class="product__item-img-wrapper">
                           <div class="product__item-img">
@@ -328,22 +386,39 @@
                         </div>
                         <div class="product__item-text-wrapper">
                           <div class="product__item-text">
-                            <div class="product__title">
-                              Finance and Consulting 
-                              <span>Business Theme</span>
-                            </div>
-                            <div class="product__author">
-                              <a class="author-link" href="#">
-                                <div class="avatar" style="background-image: url(images/content/product-author.png);"></div>
-                                <span>Theme-Valley</span>
-                              </a>
-                              
-                            </div>
-                            <div class="product__info">
-                              <div class="product__item-star">
-                                <div class="rate-star"></div>
+                            <div class="product-list__box product-list__box-text">
+                              <div class="product__title">
+                                Finance and Consulting
+                                <span>Business Theme</span>
                               </div>
-                              <a class="lnr lnr-cart" href="#"><span>427</span></a>
+                              <p class="product__describtion">
+                                Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                              </p>
+                              <a class="product-cathegory product-cathegory__list" href="#">Wordpress</a>
+                            </div>
+                            <div class="product-list__box">
+                              <div class="product__author">
+                                <a class="author-link" href="#">
+                                  <div class="avatar" style="background-image: url(images/content/product-author.png);">
+                                  </div>
+                                  <span>Theme-Valley</span>
+                                </a>
+                              </div>
+                              <div class="product-list__box-comments">
+                                <a href="#" class="lnr lnr-heart">90 loves</a>
+                                <a href="#" class="lnr lnr-bubble">90 Comments</a>
+                              </div>
+                              <div class="product__info">
+                                <div class="product__item-star">
+                                  <div class="rate-star"></div>
+                                  <span class="star__list">(34)</span>
+                                </div>
+                                <a class="lnr lnr-cart" href="#"><span>427</span></a>
+                              </div>
+                            </div>
+                            <div class="product-list__box-bottom">
+                              <a href="#" class="price-cathegory">$10 - $50</a>
+                              <a class="lnr lnr-cart lnr-cart-list" href="#"><span>892</span></a>
                             </div>
                             <div class="product__info-bottom">
                               <a href="#" class="price-cathegory">$18</a>
@@ -353,7 +428,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="favorites__item product-card mix category-new-items" data-order="5">
+                    <div class="favorites__item product-card mix new-products " data-order="5">
                       <div class="product__item">
                         <div class="product__item-img-wrapper">
                           <div class="product__item-img">
@@ -362,22 +437,39 @@
                         </div>
                         <div class="product__item-text-wrapper">
                           <div class="product__item-text">
-                            <div class="product__title">
-                              Finance and Consulting 
-                              <span>Business Theme</span>
-                            </div>
-                            <div class="product__author">
-                              <a class="author-link" href="#">
-                                <div class="avatar" style="background-image: url(images/content/product-author.png);"></div>
-                                <span>Theme-Valley</span>
-                              </a>
-                              
-                            </div>
-                            <div class="product__info">
-                              <div class="product__item-star">
-                                <div class="rate-star"></div>
+                            <div class="product-list__box product-list__box-text">
+                              <div class="product__title">
+                                Finance and Consulting
+                                <span>Business Theme</span>
                               </div>
-                              <a class="lnr lnr-cart" href="#"><span>427</span></a>
+                              <p class="product__describtion">
+                                Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                              </p>
+                              <a class="product-cathegory product-cathegory__list" href="#">Wordpress</a>
+                            </div>
+                            <div class="product-list__box">
+                              <div class="product__author">
+                                <a class="author-link" href="#">
+                                  <div class="avatar" style="background-image: url(images/content/product-author.png);">
+                                  </div>
+                                  <span>Theme-Valley</span>
+                                </a>
+                              </div>
+                              <div class="product-list__box-comments">
+                                <a href="#" class="lnr lnr-heart">90 loves</a>
+                                <a href="#" class="lnr lnr-bubble">90 Comments</a>
+                              </div>
+                              <div class="product__info">
+                                <div class="product__item-star">
+                                  <div class="rate-star"></div>
+                                  <span class="star__list">(34)</span>
+                                </div>
+                                <a class="lnr lnr-cart" href="#"><span>427</span></a>
+                              </div>
+                            </div>
+                            <div class="product-list__box-bottom">
+                              <a href="#" class="price-cathegory">$10 - $50</a>
+                              <a class="lnr lnr-cart lnr-cart-list" href="#"><span>892</span></a>
                             </div>
                             <div class="product__info-bottom">
                               <a href="#" class="price-cathegory">$18</a>
@@ -387,7 +479,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="favorites__item product-card mix category-best-seller" data-order="6">
+                    <div class="favorites__item product-card mix new-products" data-order="6">
                       <div class="product__item">
                         <div class="product__item-img-wrapper">
                           <div class="product__item-img">
@@ -396,22 +488,39 @@
                         </div>
                         <div class="product__item-text-wrapper">
                           <div class="product__item-text">
-                            <div class="product__title">
-                              Finance and Consulting 
-                              <span>Business Theme</span>
-                            </div>
-                            <div class="product__author">
-                              <a class="author-link" href="#">
-                                <div class="avatar" style="background-image: url(images/content/product-author.png);"></div>
-                                <span>Theme-Valley</span>
-                              </a>
-                              
-                            </div>
-                            <div class="product__info">
-                              <div class="product__item-star">
-                                <div class="rate-star"></div>
+                            <div class="product-list__box product-list__box-text">
+                              <div class="product__title">
+                                Finance and Consulting
+                                <span>Business Theme</span>
                               </div>
-                              <a class="lnr lnr-cart" href="#"><span>427</span></a>
+                              <p class="product__describtion">
+                                Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                              </p>
+                              <a class="product-cathegory product-cathegory__list" href="#">Wordpress</a>
+                            </div>
+                            <div class="product-list__box">
+                              <div class="product__author">
+                                <a class="author-link" href="#">
+                                  <div class="avatar" style="background-image: url(images/content/product-author.png);">
+                                  </div>
+                                  <span>Theme-Valley</span>
+                                </a>
+                              </div>
+                              <div class="product-list__box-comments">
+                                <a href="#" class="lnr lnr-heart">90 loves</a>
+                                <a href="#" class="lnr lnr-bubble">90 Comments</a>
+                              </div>
+                              <div class="product__info">
+                                <div class="product__item-star">
+                                  <div class="rate-star"></div>
+                                  <span class="star__list">(34)</span>
+                                </div>
+                                <a class="lnr lnr-cart" href="#"><span>427</span></a>
+                              </div>
+                            </div>
+                            <div class="product-list__box-bottom">
+                              <a href="#" class="price-cathegory">$10 - $50</a>
+                              <a class="lnr lnr-cart lnr-cart-list" href="#"><span>892</span></a>
                             </div>
                             <div class="product__info-bottom">
                               <a href="#" class="price-cathegory">$18</a>
@@ -421,7 +530,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="favorites__item product-card mix category-best-rating category-high-price" data-order="7">
+                    <div class="favorites__item product-card mix new-products" data-order="7">
                       <div class="product__item">
                         <div class="product__item-img-wrapper">
                           <div class="product__item-img">
@@ -430,22 +539,39 @@
                         </div>
                         <div class="product__item-text-wrapper">
                           <div class="product__item-text">
-                            <div class="product__title">
-                              Finance and Consulting 
-                              <span>Business Theme</span>
-                            </div>
-                            <div class="product__author">
-                              <a class="author-link" href="#">
-                                <div class="avatar" style="background-image: url(images/content/product-author.png);"></div>
-                                <span>Theme-Valley</span>
-                              </a>
-                              
-                            </div>
-                            <div class="product__info">
-                              <div class="product__item-star">
-                                <div class="rate-star"></div>
+                            <div class="product-list__box product-list__box-text">
+                              <div class="product__title">
+                                Finance and Consulting
+                                <span>Business Theme</span>
                               </div>
-                              <a class="lnr lnr-cart" href="#"><span>427</span></a>
+                              <p class="product__describtion">
+                                Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                              </p>
+                              <a class="product-cathegory product-cathegory__list" href="#">Wordpress</a>
+                            </div>
+                            <div class="product-list__box">
+                              <div class="product__author">
+                                <a class="author-link" href="#">
+                                  <div class="avatar" style="background-image: url(images/content/product-author.png);">
+                                  </div>
+                                  <span>Theme-Valley</span>
+                                </a>
+                              </div>
+                              <div class="product-list__box-comments">
+                                <a href="#" class="lnr lnr-heart">90 loves</a>
+                                <a href="#" class="lnr lnr-bubble">90 Comments</a>
+                              </div>
+                              <div class="product__info">
+                                <div class="product__item-star">
+                                  <div class="rate-star"></div>
+                                  <span class="star__list">(34)</span>
+                                </div>
+                                <a class="lnr lnr-cart" href="#"><span>427</span></a>
+                              </div>
+                            </div>
+                            <div class="product-list__box-bottom">
+                              <a href="#" class="price-cathegory">$10 - $50</a>
+                              <a class="lnr lnr-cart lnr-cart-list" href="#"><span>892</span></a>
                             </div>
                             <div class="product__info-bottom">
                               <a href="#" class="price-cathegory">$18</a>
@@ -455,7 +581,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="favorites__item product-card mix category-low-price" data-order="8">
+                    <div class="favorites__item product-card mix new-products" data-order="8">
                       <div class="product__item">
                         <div class="product__item-img-wrapper">
                           <div class="product__item-img">
@@ -464,22 +590,39 @@
                         </div>
                         <div class="product__item-text-wrapper">
                           <div class="product__item-text">
-                            <div class="product__title">
-                              Finance and Consulting 
-                              <span>Business Theme</span>
-                            </div>
-                            <div class="product__author">
-                              <a class="author-link" href="#">
-                                <div class="avatar" style="background-image: url(images/content/product-author.png);"></div>
-                                <span>Theme-Valley</span>
-                              </a>
-                              
-                            </div>
-                            <div class="product__info">
-                              <div class="product__item-star">
-                                <div class="rate-star"></div>
+                            <div class="product-list__box product-list__box-text">
+                              <div class="product__title">
+                                Finance and Consulting
+                                <span>Business Theme</span>
                               </div>
-                              <a class="lnr lnr-cart" href="#"><span>427</span></a>
+                              <p class="product__describtion">
+                                Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                              </p>
+                              <a class="product-cathegory product-cathegory__list" href="#">Wordpress</a>
+                            </div>
+                            <div class="product-list__box">
+                              <div class="product__author">
+                                <a class="author-link" href="#">
+                                  <div class="avatar" style="background-image: url(images/content/product-author.png);">
+                                  </div>
+                                  <span>Theme-Valley</span>
+                                </a>
+                              </div>
+                              <div class="product-list__box-comments">
+                                <a href="#" class="lnr lnr-heart">90 loves</a>
+                                <a href="#" class="lnr lnr-bubble">90 Comments</a>
+                              </div>
+                              <div class="product__info">
+                                <div class="product__item-star">
+                                  <div class="rate-star"></div>
+                                  <span class="star__list">(34)</span>
+                                </div>
+                                <a class="lnr lnr-cart" href="#"><span>427</span></a>
+                              </div>
+                            </div>
+                            <div class="product-list__box-bottom">
+                              <a href="#" class="price-cathegory">$10 - $50</a>
+                              <a class="lnr lnr-cart lnr-cart-list" href="#"><span>892</span></a>
                             </div>
                             <div class="product__info-bottom">
                               <a href="#" class="price-cathegory">$18</a>
@@ -489,7 +632,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="favorites__item product-card mix category-high-price" data-order="9">
+                    <div class="favorites__item product-card mix new-products" data-order="9">
                       <div class="product__item">
                         <div class="product__item-img-wrapper">
                           <div class="product__item-img">
@@ -498,22 +641,39 @@
                         </div>
                         <div class="product__item-text-wrapper">
                           <div class="product__item-text">
-                            <div class="product__title">
-                              Finance and Consulting 
-                              <span>Business Theme</span>
-                            </div>
-                            <div class="product__author">
-                              <a class="author-link" href="#">
-                                <div class="avatar" style="background-image: url(images/content/product-author.png);"></div>
-                                <span>Theme-Valley</span>
-                              </a>
-                              
-                            </div>
-                            <div class="product__info">
-                              <div class="product__item-star">
-                                <div class="rate-star"></div>
+                            <div class="product-list__box product-list__box-text">
+                              <div class="product__title">
+                                Finance and Consulting
+                                <span>Business Theme</span>
                               </div>
-                              <a class="lnr lnr-cart" href="#"><span>427</span></a>
+                              <p class="product__describtion">
+                                Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                              </p>
+                              <a class="product-cathegory product-cathegory__list" href="#">Wordpress</a>
+                            </div>
+                            <div class="product-list__box">
+                              <div class="product__author">
+                                <a class="author-link" href="#">
+                                  <div class="avatar" style="background-image: url(images/content/product-author.png);">
+                                  </div>
+                                  <span>Theme-Valley</span>
+                                </a>
+                              </div>
+                              <div class="product-list__box-comments">
+                                <a href="#" class="lnr lnr-heart">90 loves</a>
+                                <a href="#" class="lnr lnr-bubble">90 Comments</a>
+                              </div>
+                              <div class="product__info">
+                                <div class="product__item-star">
+                                  <div class="rate-star"></div>
+                                  <span class="star__list">(34)</span>
+                                </div>
+                                <a class="lnr lnr-cart" href="#"><span>427</span></a>
+                              </div>
+                            </div>
+                            <div class="product-list__box-bottom">
+                              <a href="#" class="price-cathegory">$10 - $50</a>
+                              <a class="lnr lnr-cart lnr-cart-list" href="#"><span>892</span></a>
                             </div>
                             <div class="product__info-bottom">
                               <a href="#" class="price-cathegory">$18</a>
@@ -523,7 +683,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="favorites__item product-card mix category-high-price" data-order="10">
+                    <div class="favorites__item product-card mix new-products" data-order="10">
                       <div class="product__item">
                         <div class="product__item-img-wrapper">
                           <div class="product__item-img">
@@ -532,22 +692,39 @@
                         </div>
                         <div class="product__item-text-wrapper">
                           <div class="product__item-text">
-                            <div class="product__title">
-                              Finance and Consulting 
-                              <span>Business Theme</span>
-                            </div>
-                            <div class="product__author">
-                              <a class="author-link" href="#">
-                                <div class="avatar" style="background-image: url(images/content/product-author.png);"></div>
-                                <span>Theme-Valley</span>
-                              </a>
-                              
-                            </div>
-                            <div class="product__info">
-                              <div class="product__item-star">
-                                <div class="rate-star"></div>
+                            <div class="product-list__box product-list__box-text">
+                              <div class="product__title">
+                                Finance and Consulting
+                                <span>Business Theme</span>
                               </div>
-                              <a class="lnr lnr-cart" href="#"><span>427</span></a>
+                              <p class="product__describtion">
+                                Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                              </p>
+                              <a class="product-cathegory product-cathegory__list" href="#">Wordpress</a>
+                            </div>
+                            <div class="product-list__box">
+                              <div class="product__author">
+                                <a class="author-link" href="#">
+                                  <div class="avatar" style="background-image: url(images/content/product-author.png);">
+                                  </div>
+                                  <span>Theme-Valley</span>
+                                </a>
+                              </div>
+                              <div class="product-list__box-comments">
+                                <a href="#" class="lnr lnr-heart">90 loves</a>
+                                <a href="#" class="lnr lnr-bubble">90 Comments</a>
+                              </div>
+                              <div class="product__info">
+                                <div class="product__item-star">
+                                  <div class="rate-star"></div>
+                                  <span class="star__list">(34)</span>
+                                </div>
+                                <a class="lnr lnr-cart" href="#"><span>427</span></a>
+                              </div>
+                            </div>
+                            <div class="product-list__box-bottom">
+                              <a href="#" class="price-cathegory">$10 - $50</a>
+                              <a class="lnr lnr-cart lnr-cart-list" href="#"><span>892</span></a>
                             </div>
                             <div class="product__info-bottom">
                               <a href="#" class="price-cathegory">$18</a>
@@ -557,7 +734,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="favorites__item product-card mix category-low-price" data-order="11">
+                    <div class="favorites__item product-card mix new-products " data-order="11">
                       <div class="product__item">
                         <div class="product__item-img-wrapper">
                           <div class="product__item-img">
@@ -566,22 +743,39 @@
                         </div>
                         <div class="product__item-text-wrapper">
                           <div class="product__item-text">
-                            <div class="product__title">
-                              Finance and Consulting 
-                              <span>Business Theme</span>
-                            </div>
-                            <div class="product__author">
-                              <a class="author-link" href="#">
-                                <div class="avatar" style="background-image: url(images/content/product-author.png);"></div>
-                                <span>Theme-Valley</span>
-                              </a>
-                              
-                            </div>
-                            <div class="product__info">
-                              <div class="product__item-star">
-                                <div class="rate-star"></div>
+                            <div class="product-list__box product-list__box-text">
+                              <div class="product__title">
+                                Finance and Consulting
+                                <span>Business Theme</span>
                               </div>
-                              <a class="lnr lnr-cart" href="#"><span>427</span></a>
+                              <p class="product__describtion">
+                                Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                              </p>
+                              <a class="product-cathegory product-cathegory__list" href="#">Wordpress</a>
+                            </div>
+                            <div class="product-list__box">
+                              <div class="product__author">
+                                <a class="author-link" href="#">
+                                  <div class="avatar" style="background-image: url(images/content/product-author.png);">
+                                  </div>
+                                  <span>Theme-Valley</span>
+                                </a>
+                              </div>
+                              <div class="product-list__box-comments">
+                                <a href="#" class="lnr lnr-heart">90 loves</a>
+                                <a href="#" class="lnr lnr-bubble">90 Comments</a>
+                              </div>
+                              <div class="product__info">
+                                <div class="product__item-star">
+                                  <div class="rate-star"></div>
+                                  <span class="star__list">(34)</span>
+                                </div>
+                                <a class="lnr lnr-cart" href="#"><span>427</span></a>
+                              </div>
+                            </div>
+                            <div class="product-list__box-bottom">
+                              <a href="#" class="price-cathegory">$10 - $50</a>
+                              <a class="lnr lnr-cart lnr-cart-list" href="#"><span>892</span></a>
                             </div>
                             <div class="product__info-bottom">
                               <a href="#" class="price-cathegory">$18</a>
@@ -591,7 +785,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="favorites__item product-card mix category-high-price" data-order="12">
+                    <div class="favorites__item product-card mix new-products " data-order="12">
                       <div class="product__item">
                         <div class="product__item-img-wrapper">
                           <div class="product__item-img">
@@ -600,22 +794,39 @@
                         </div>
                         <div class="product__item-text-wrapper">
                           <div class="product__item-text">
-                            <div class="product__title">
-                              Finance and Consulting 
-                              <span>Business Theme</span>
-                            </div>
-                            <div class="product__author">
-                              <a class="author-link" href="#">
-                                <div class="avatar" style="background-image: url(images/content/product-author.png);"></div>
-                                <span>Theme-Valley</span>
-                              </a>
-                              
-                            </div>
-                            <div class="product__info">
-                              <div class="product__item-star">
-                                <div class="rate-star"></div>
+                            <div class="product-list__box product-list__box-text">
+                              <div class="product__title">
+                                Finance and Consulting
+                                <span>Business Theme</span>
                               </div>
-                              <a class="lnr lnr-cart" href="#"><span>427</span></a>
+                              <p class="product__describtion">
+                                Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                              </p>
+                              <a class="product-cathegory product-cathegory__list" href="#">Wordpress</a>
+                            </div>
+                            <div class="product-list__box">
+                              <div class="product__author">
+                                <a class="author-link" href="#">
+                                  <div class="avatar" style="background-image: url(images/content/product-author.png);">
+                                  </div>
+                                  <span>Theme-Valley</span>
+                                </a>
+                              </div>
+                              <div class="product-list__box-comments">
+                                <a href="#" class="lnr lnr-heart">90 loves</a>
+                                <a href="#" class="lnr lnr-bubble">90 Comments</a>
+                              </div>
+                              <div class="product__info">
+                                <div class="product__item-star">
+                                  <div class="rate-star"></div>
+                                  <span class="star__list">(34)</span>
+                                </div>
+                                <a class="lnr lnr-cart" href="#"><span>427</span></a>
+                              </div>
+                            </div>
+                            <div class="product-list__box-bottom">
+                              <a href="#" class="price-cathegory">$10 - $50</a>
+                              <a class="lnr lnr-cart lnr-cart-list" href="#"><span>892</span></a>
                             </div>
                             <div class="product__info-bottom">
                               <a href="#" class="price-cathegory">$18</a>
