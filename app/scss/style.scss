@@ -1984,7 +1984,6 @@ cursor: pointer;
       }
       .arrow-active {
         background-color: $violet;
-        
         a {
           &::before {
             color: #fff;
@@ -2458,7 +2457,6 @@ cursor: pointer;
   }
   &__inner {
     display: flex;
-    
   }
   &__content {
     margin-right: 30px;
@@ -2467,7 +2465,7 @@ cursor: pointer;
     background-color: #fff;
     box-shadow: 0px 2px 4px 0px rgba( 108, 111, 115, 0.2 );
     border-radius: 4px;
-    max-width: 750px;
+    max-width: 755px;
     width: 100%;
     margin-bottom: 40px;
     &-img {
@@ -2478,7 +2476,7 @@ cursor: pointer;
       height: 430px;
     }
     &-title {
-      padding: 40px 80px 10px 30px ;
+      padding: 40px 30px 10px;
       color: #000;
       line-height: 40px;
       font-size: 30px;
@@ -2558,8 +2556,8 @@ cursor: pointer;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        width: 366px;
-        height: 276px;
+        width: 360px;
+        height: 270px;
         border-radius: 4px;
       }
     }
@@ -2572,6 +2570,73 @@ cursor: pointer;
         &.active,
         &:hover {
           color: $blue;
+        }
+      }
+    } 
+    .tab-item {
+      display: none;
+      &:first-child {
+        display: block;
+      }}
+    &-tabs {
+      display: flex;
+      flex-direction: column;
+      .tabs {
+        display: flex;
+        flex-direction: row;  
+        justify-content: space-between;  
+        border-bottom: 1px solid #e8ebf0;  
+        .aside__title {
+          border-bottom: none;
+          cursor: pointer;
+          &.active {
+            color: $blue;
+          }
+        }
+      }
+      .tab__content {
+        padding: 20px 25px 40px;
+      }
+    }
+    &-link {
+      display: flex;
+      flex-direction: row;
+      border-bottom: 1px solid #e8ebf0; 
+      padding: 20px 0px;
+      .link__img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 70px;
+        height: 70px;
+        display: block;
+      }     
+      .link__text {
+        width: 100%;
+        max-width: 225px;
+        margin-left: 15px;
+        a {
+          @include f500;
+          color: #333333;
+          line-height: 20px;
+        }
+      }
+      .link__title {
+        margin-bottom: 10px;
+      }
+      a.link__pub {
+        color: #999999;
+        font-size: 15px;
+        position: relative;
+        padding-left: 27px;
+        @include f400;
+        &::before {
+          font-family: 'Linearicons-Free';
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
         }
       }
     }

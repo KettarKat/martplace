@@ -46,6 +46,14 @@ $(function(){
     to: 300,
     prefix: "$"
   });
+  $('.blog__aside-tabs .tab').on('click', function(event) {
+    var id = $(this).attr('data-id');
+      $('.blog__aside-tabs').find('.tab-item').removeClass('active-tab').hide();
+      $('.blog__aside-tabs .tabs').find('.tab').removeClass('active');
+      $(this).addClass('active');
+      $('#'+id).addClass('active-tab').fadeIn();
+      return false;
+    });
     
   $('input, select').styler();
   var mixer = mixitup('.release__products-inner');
