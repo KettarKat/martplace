@@ -2668,41 +2668,46 @@ cursor: pointer;
     }
   }   
   &__link {
-      text-align: center;
-      margin: 30px 0px;
-      a {
-        @include f500;
-        font-size: 15px;
-        padding: 15px 50px;
-        box-shadow: 0px 4px 30px 0px rgba( 0, 0, 0, 0.2 );
-        border-radius: 30px;
-        color: $violet;
-        &.active {
-          background-color: $blue;
-          box-shadow: none;
-          color: #fff;
-        }
-        &.lnr-heart {
-          padding: 15px 20px;
-          margin-left: 30px;
-          &::before {
-            font-family: 'Linearicons-Free';
-            top: -50%;
-            transform: translateY(50%);
-            padding-right: 10px;
-          }
+    text-align: center;
+    margin: 30px 0px;
+    a {
+      @include f500;
+      font-size: 15px;
+      padding: 15px 50px;
+      box-shadow: 0px 4px 30px 0px rgba( 0, 0, 0, 0.2 );
+      border-radius: 30px;
+      color: $violet;
+      &.active {
+        background-color: $blue;
+        box-shadow: none;
+        color: #fff;
+      }
+      &.lnr-heart {
+        padding: 15px 20px;
+        margin-left: 30px;
+        &::before {
+          font-family: 'Linearicons-Free';
+          top: -50%;
+          transform: translateY(50%);
+          padding-right: 10px;
         }
       }
+    }
   }
   .single-product__icons {
     padding: 30px 0px;
     border-top: 1px solid #e8ebf0; 
+    display: flex;
+    justify-content: center;
   }
   .icon__box {
     text-align: center;
+    display: inline-block;
     li {
       display: inline-block;
       text-align: center;
+    }
+    &-link {
       background-image: url(../images/icons/fb-icon.png);
       background-repeat: no-repeat;
       background-position: center;
@@ -2710,21 +2715,89 @@ cursor: pointer;
       width: 42px;
       height: 42px;
       position: relative;
+      &::before {
+        content: '';
+        background-image: url(../images/icons/facebook-f-brands.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        width: 9px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        height: 15px;
+      }
+      &-tw {
+        background-image: url(../images/icons/tw-icon.png);
+        &::before {
+          background-image: url(../images/icons/twitter-icon.svg);
+          width: 15px;
+          height: 12px;
+        }
+      }
+      &-gl {
+        background-image: url(../images/icons/gl-icon.png);
+        &::before {
+          background-image: url(../images/icons/google-icon.svg);
+          width: 14px;
+          height: 15px;
+        }
+      }
+      &-pin {
+        background-image: url(../images/icons/pin-icon.png);
+        &::before {
+          background-image: url(../images/icons/pinterest-icon.svg);
+          width: 15px;
+          height: 15px;
+        }
+      }
+      &-in {
+        background-image: url(../images/icons/ln-icon.png);
+        &::before {
+          background-image: url(../images/icons/linkedin-icon.svg);
+          width: 15px;
+          height: 14px;
+          margin-top: -1px;
+        }
+      }
+      &-dr {
+        background-image: url(../images/icons/dr-icon.png);
+        &::before {
+          background-image: url(../images/icons/dribbble-icon.svg);
+          width: 14px;
+          height: 14px;
+        }
+      }
     }
-    &-link {
-      background-image: url(../images/icons/facebook-f-brands.svg);
-      display: block;
-      width: 16px;
-      height: 10px;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: 0;
-      right: 0;
-      margin: 0 auto;
+  }
+  .link-icon__btn {
+    margin-right: 20px;
+    box-shadow: 0px 4px 30px 0px rgba( 0, 0, 0, 0.2 );
+    padding: 15px 30px 15px 24px;
+    border-radius: 30px;
+    font-size: 15px;
+    color: #000;
+    span {
+      padding-left: 35px;
+      position: relative;
+      &::before {
+        content: '';
+        background-image: url(../images/icons/share-icon.png);
+        width: 20px;
+        height: 21px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+      }
     }
   }
 }
 //end single product page
+
 
 

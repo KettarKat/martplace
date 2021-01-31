@@ -54,6 +54,14 @@ $(function(){
       $('#'+id).addClass('active-tab').fadeIn();
       return false;
     });
+    $('.single-product__tabs .tab').on('click', function(event) {
+      var id = $(this).attr('data-id');
+        $('.single-product__tabs').find('.tab-item').removeClass('active-tab').hide();
+        $('.single-product__tabs .tabs').find('.tab').removeClass('active');
+        $(this).addClass('active');
+        $('#'+id).addClass('active-tab').fadeIn();
+        return false;
+      });
     
   $('input, select').styler();
   var mixer = mixitup('.release__products-inner');
